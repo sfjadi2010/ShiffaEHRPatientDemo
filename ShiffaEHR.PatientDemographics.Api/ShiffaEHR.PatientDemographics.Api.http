@@ -1,0 +1,36 @@
+@ShiffaEHR.PatientDemographics.Api_HostAddress = https://localhost:7049
+
+
+POST {{ShiffaEHR.PatientDemographics.Api_HostAddress}}/patients
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Goodwin",
+    "DateOfBirth": "10/20/1949",
+    "gender": 1,
+    "phoneNumber": "234-234-2345",
+    "email": "john.goodwin@it.com",
+    "createdAt": "1/17/2025 5:05:25 PM"
+}
+
+###
+
+GET {{ShiffaEHR.PatientDemographics.Api_HostAddress}}/patients
+
+###
+
+PUT {{ShiffaEHR.PatientDemographics.Api_HostAddress}}/patients/2
+Content-Type: application/json
+{
+    "id": 2,
+    "firstName": "Jessica",
+    "lastname": "Brew",
+    "dateOfBirth": "1960-11-15",
+    "gender": 2,
+    "phoneNumber": "121-234-2345",
+    "email": "jessica.brew@3together.com",
+    "createdAt": "2025-01-17T07:36:00.000",
+    "updatedAt": "2025-01-17T08:06:00.000"
+  }
+###
