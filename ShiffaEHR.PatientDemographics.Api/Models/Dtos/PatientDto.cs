@@ -8,9 +8,11 @@ public class PatientDto
     public string FirstName { get; set; } = default!;
     public string Lastname { get; set; } = default!;
     public DateOnly DateOfBirth { get; set; }
+    public DateOnly? DateOfDeath { get; set; }
     public Gender Gender { get; set; }
     public string PhoneNumber { get; set; } = default!;
     public string Email { get; set; } = default!;
+    public string? SocialSecurityNumber { get; set; } = default!;
     public DateTime CreatedAt { get; set; }
     public DateTime? UpdatedAt { get; set; }
 }
